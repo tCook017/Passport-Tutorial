@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Passport Tutorial</title>
+    <meta charset='utf-8'/>
+    <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+  </head>
+  <body>
+    <h1>Create User</h1>
+    <form action=''>
+        <br>
+        <input type='text' id='name' placeholder='Name' required>
+        <input type='password' id='password' placeholder='Password' required>
+        <select id="permissions" required>
+          <option value="standard" selected>Standard User</option>
+          <option value="mod">Administrator</option>
+        </select>
+        <br>
+        <input type='submit' value='Create'>
+    </form>
+    <script src='js/create-user.js'></script>
+    <p><a href="/login">Login</a> a user.</p>
+    <p><a href="/end-session">Logout</a>.</p>
+  </body>
+</html>
