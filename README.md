@@ -35,7 +35,7 @@ Most people use the passport-local strategy (including the Passport documentatio
 - `done(err, object, { message })`
   * A method which passes to Passport the authenticated user or delivers an error message.
   * Example: `return done(null, user)` indicates a successful authentication.
-  * Example 2: `return done(err, false, { message: ‘Incorrect credentials’ }` indicates an error and delivers the reason for failure in ‘message’ (which may be flashed to the user if ‘failureFlash’ is set to true in the options of `passport.authenticate()`, and it is fully implemented.
+  * Example 2: `return done(err, false, { message: ‘Incorrect credentials’ }` indicates an error and delivers the reason for failure in ‘message’ (which may be flashed to the user if ‘failureFlash’ is set to true in the options of `passport.authenticate()`, and flash is fully implemented.
 - `passport.authenticate(‘strategy’, { options })`
   * This function calls a login function automatically.
   * It is used to create the session.
